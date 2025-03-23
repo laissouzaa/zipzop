@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://th.bing.com/th/id/R.8ae680ca1aa4896e8771ba08b710ec05?rik=e649awJ6uisw3A&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2ffV5FG8TpqGcso%2fgiphy.gif&ehk=PG65Au2QR%2bpggH%2b9qCEDP7l54%2f7oybsjuEkV2dv9Rnk%3d&risl=&pid=ImgRaw&r=0'); /* Caminho para a imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Deixa a imagem fixa ao rolar a página */
+}
+
+header {
+    background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
+    background-size: cover;
+    margin-top: 0; /* Removi o valor negativo */
+    padding: 30px 20px; /* Reduzi o padding para diminuir o tamanho interno da header */
+    height: 80px; /* Defini uma altura fixa para o header */
+    display: flex; /* Ativa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto (se houver) */
+    border-radius: 10px;
+    width: 100%; /* Garante que o header ocupe toda a largura da página */
+}
+
+header .logo {
+    width: 130px; /* Define a largura da logo */
+    margin-right: 10px; /* Ajusta a margem entre logo e título */
+}
+
+header .titulo {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    color: white; /* Cor do texto do título */
+    margin: 0; /* Remove margens adicionais */
+}
+
+header .titulo {
+    width: 330px;
+    margin: 5px auto; /* Reduzi o espaço ao redor do título */
+    text-align: center;
+}
+.conteudo-principal {
+    background-color:#BCF9FF; /* Cor diferente para o conteúdo principal */
+    padding: 300px; /* Espaçamento interno do conteúdo (ajuste de acordo com sua necessidade) */
+    margin-top: 20px; /* Espaço acima do conteúdo principal */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    width: 80%; /* Largura do conteúdo principal (ajuste conforme necessário) */
+    margin-left: auto; /* Centraliza o conteúdo horizontalmente */
+    margin-right: auto; /* Centraliza o conteúdo horizontalmente */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}

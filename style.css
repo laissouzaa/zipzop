@@ -94,9 +94,10 @@ header .titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 30px; /* Aumentado o espaçamento */
     padding: 20px;
     border-radius: 12px;
+    margin-bottom: 40px; /* Aumentado o espaçamento inferior */
 }
 
 /* Estilo das imagens dentro da div sobremesas */
@@ -123,10 +124,10 @@ header .titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; /* Aumentado o espaçamento entre as imagens da div bebidas */
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* Aumentado o espaçamento inferior */
 }
 
 /* Estilo das imagens dentro da div bebidas */
@@ -141,11 +142,11 @@ header .titulo {
 @media screen and (max-width: 768px) {
     /* Ajustes no header */
     header .logo {
-        width: 80px; /* Logo menor */
+        width: 100px; /* Logo menor em telas pequenas */
     }
     
     header .titulo {
-        font-size: 18px; /* Fonte menor */
+        font-size: 20px; /* Tamanho da fonte menor */
     }
 
     /* Ajustes no conteúdo principal */
@@ -155,8 +156,8 @@ header .titulo {
 
     /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: column; 
-        gap: 15px; /* Ajusta o espaçamento entre as imagens */
+        flex-direction: column; /* Alinha as imagens em coluna em telas pequenas */
+        gap: 30px; /* Aumenta o espaçamento entre as divs */
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -175,23 +176,23 @@ header .titulo {
     }
 }
 
-/* Responsividade para telas muito pequenas */
+/* Responsividade para telas muito pequenas (como o modo retrato de dispositivos como o Redmi 11) */
 @media screen and (max-width: 480px) {
     .conteudo-principal {
         padding: 10px;
     }
 
     header .logo {
-        width: 70px; 
+        width: 80px; 
     }
     
     header .titulo {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .image-container, .sobremesas, .bebidas {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         width: 90%;
     }
 
@@ -205,6 +206,7 @@ header .titulo {
         padding: 6px;
     }
 }
+
 
 
 

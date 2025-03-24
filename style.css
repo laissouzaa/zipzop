@@ -24,10 +24,10 @@ body {
 header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
-    background-position: center; /* Para garantir que a imagem de fundo fique centralizada */
-    width: 100%; /* Ocupa toda a largura da tela */
+    background-position: center;
+    width: 100%; 
     min-height: 80px; /* Altura mínima para o header */
-    padding: 10px 10px; /* Ajuste o padding para um tamanho mais adequado */
+    padding: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,39 +36,36 @@ header {
     box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
 }
 
-/* Estilo para o título no header */
+/* Estilo para a logo dentro do header */
 header .logo {
-    width: 130px; /* Define a largura da logo */
+    width: 130px; /* Largura adequada para a logo */
+    max-width: 100%; /* Garante que a logo não ultrapasse o tamanho definido */
+    height: auto; /* Mantém a proporção */
     margin-right: 10px; /* Ajusta a margem entre logo e título */
 }
 
 /* Estilo do título no header */
 header .titulo {
-    font-size: 24px; /* Define o tamanho da fonte do título */
-    color: white; /* Cor do texto do título */
+    font-size: 24px; 
+    color: white; 
     margin: 0;
 }
 
 /* Estilo do conteúdo principal */
 .conteudo-principal {
-    background-color: #BCF9FF; /* Cor diferente para o conteúdo principal */
-    padding: 40px; /* Ajuste o padding conforme necessário */
-    margin-top: 20px; /* Espaço acima do conteúdo principal */
-    border-radius: 8px; /* Bordas arredondadas */
-    width: 100%; /* Garante que o conteúdo ocupe 100% da largura */
-    max-width: 1200px; /* Limite de largura máxima */
-    margin-left: auto; /* Centraliza o conteúdo horizontalmente */
-    margin-right: auto; /* Centraliza o conteúdo horizontalmente */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    background-color: #BCF9FF; 
+    padding: 20px; /* Reduz o padding */
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-/* Faz com que o conteúdo dentro do .conteudo-principal não ultrapasse os limites da tela */
-.conteudo-principal > * {
-    flex-shrink: 0; /* Impede que os itens encolham e causem overflow */
 }
 
 /* Estilo para o contêiner das imagens */
@@ -76,57 +73,47 @@ header .titulo {
     background-color: aquamarine;
     display: flex;
     flex-direction: row; /* Alinha as imagens na horizontal */
-    justify-content: center; /* Alinha as imagens no centro */
-    gap: 30px; /* Aumenta o espaçamento entre as imagens */
+    justify-content: center;
+    gap: 20px; /* Ajuste do espaçamento entre as imagens */
     padding: 20px;
-    border-radius: 12px; /* Bordas arredondadas para o contêiner */
-    margin-bottom: 30px; /* Espaçamento entre o container e a div sobremesas */
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
-/* Estilo das imagens na div image-container */
+/* Estilo das imagens dentro do .image-container */
 .image-container img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
-    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    width: 100px; /* Largura ajustada das imagens */
+    height: 100px; /* Altura ajustada das imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 8px;
 }
 
-/* Estilos para a div sobremesas */
+/* Estilo para a div sobremesas */
 .sobremesas {
     background-color: lightpink;
     display: flex;
-    flex-direction: row; /* Alinha as imagens na horizontal */
-    justify-content: center; /* Alinha as imagens no centro */
-    gap: 30px; /* Aumenta o espaçamento entre as imagens */
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    border-radius: 12px; /* Bordas arredondadas para o contêiner */
+    border-radius: 12px;
 }
 
-/* Estilo das imagens na div sobremesas */
+/* Estilo das imagens dentro da div sobremesas */
 .sobremesas img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
-    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-/* Estilo para o título da div Salgados */
-.Salgados {
+/* Estilo para o título das divs */
+.Salgados, .Sobremesas, .bebidastexto {
     background-color: rgb(44, 128, 167);
     border-radius: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
-    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
-    color: white; /* Define a cor do texto (caso queira) */
-    text-align: center; /* Centraliza o texto do título */
-}
-
-/* Estilo para o título da div Sobremesas */
-.Sobremesas {
-    background-color: rgb(44, 128, 167);
-    border-radius: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
-    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
-    color: white; /* Define a cor do texto (caso queira) */
+    margin-bottom: 20px; 
+    padding: 10px;
+    color: white;
     text-align: center;
 }
 
@@ -134,105 +121,91 @@ header .titulo {
 .bebidas {
     background-color: rgb(195, 182, 255);
     display: flex;
-    flex-direction: row; /* Alinha as imagens na horizontal */
-    justify-content: center; /* Alinha as imagens no centro */
-    gap: 30px; /* Aumenta o espaçamento entre as imagens (igual a .sobremesas) */
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    border-radius: 12px; /* Bordas arredondadas para o contêiner */
-    margin-bottom: 30px; /* Adiciona o mesmo espaçamento entre a div bebidas e a próxima */
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
-/* Estilo das imagens na div bebidas */
+/* Estilo das imagens dentro da div bebidas */
 .bebidas img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
-    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
-}
-
-.bebidastexto {
-    background-color: rgb(44, 128, 167);
-    border-radius: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
-    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
-    color: white; /* Define a cor do texto (caso queira) */
-    text-align: center;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* Responsividade: Ajustes para telas menores como celulares */
 @media screen and (max-width: 768px) {
     /* Ajustes no header */
     header .logo {
-        width: 100px; /* Logo menor em telas pequenas */
+        width: 80px; /* Logo menor */
     }
     
     header .titulo {
-        font-size: 18px; /* Tamanho da fonte menor */
+        font-size: 18px; /* Fonte menor */
     }
 
     /* Ajustes no conteúdo principal */
     .conteudo-principal {
-        padding: 20px; /* Menos padding */
-        margin-top: 10px; /* Menos margem */
+        padding: 15px; 
     }
 
     /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: column; /* Alinha as imagens em coluna em telas pequenas */
-        gap: 20px; /* Reduz o espaçamento entre as imagens */
-        width: 90%; /* Reduz a largura das divs */
-        margin-left: auto; /* Centraliza horizontalmente */
-        margin-right: auto; /* Centraliza horizontalmente */
+        flex-direction: column; 
+        gap: 15px; /* Ajusta o espaçamento entre as imagens */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
-        width: 80px; /* Imagens menores */
-        height: 80px; /* Imagens menores */
+        width: 80px; 
+        height: 80px; 
     }
 
     /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
-        font-size: 16px; /* Tamanho de fonte menor */
-        padding: 8px; /* Menos padding */
+        font-size: 16px; 
+        padding: 8px;
     }
 }
 
-/* Responsividade para telas muito pequenas (celulares em modo retrato) */
+/* Responsividade para telas muito pequenas */
 @media screen and (max-width: 480px) {
-    /* Ajustes no conteúdo principal */
     .conteudo-principal {
-        padding: 10px; /* Menos padding */
+        padding: 10px;
     }
 
-    /* Ajustes no header */
     header .logo {
-        width: 80px; /* Logo ainda menor */
+        width: 70px; 
     }
     
     header .titulo {
-        font-size: 16px; /* Tamanho da fonte menor ainda */
+        font-size: 16px;
     }
 
-    /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: column; /* Alinha as imagens em coluna em telas muito pequenas */
-        gap: 10px; /* Menos espaçamento */
-        width: 90%; /* Ajusta a largura para 90% */
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
     }
 
-    /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
-        width: 70px; /* Imagens ainda menores */
-        height: 70px; /* Imagens ainda menores */
+        width: 70px;
+        height: 70px;
     }
 
-    /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
-        font-size: 14px; /* Fonte ainda menor */
-        padding: 6px; /* Menos padding */
+        font-size: 14px;
+        padding: 6px;
     }
 }
+
 
 
 

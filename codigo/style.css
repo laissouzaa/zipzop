@@ -1,9 +1,26 @@
+/* Reset para garantir que não haja margens ou padding indesejados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que o body e html ocupem 100% da altura e largura */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Impede barras de rolagem no body */
+}
+
+/* Corpo da página com a imagem de fundo */
 body {
     background-image: url('https://th.bing.com/th/id/R.8ae680ca1aa4896e8771ba08b710ec05?rik=e649awJ6uisw3A&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2ffV5FG8TpqGcso%2fgiphy.gif&ehk=PG65Au2QR%2bpggH%2b9qCEDP7l54%2f7oybsjuEkV2dv9Rnk%3d&risl=&pid=ImgRaw&r=0'); /* Caminho para a imagem */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-attachment: fixed; /* Deixa a imagem fixa ao rolar a página */
+    background-position: center; /* Centraliza a imagem */
 }
 
+/* Estilo para o header */
 header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
@@ -18,30 +35,30 @@ header {
     width: 100%; /* Garante que o header ocupe toda a largura da página */
 }
 
+/* Estilo para o logo no header */
 header .logo {
     width: 130px; /* Define a largura da logo */
     margin-right: 10px; /* Ajusta a margem entre logo e título */
 }
 
+/* Estilo para o título no header */
 header .titulo {
     font-size: 24px; /* Define o tamanho da fonte do título */
     color: white; /* Cor do texto do título */
     margin: 0; /* Remove margens adicionais */
 }
 
-header .titulo {
-    width: 330px;
-    margin: 5px auto; /* Reduzi o espaço ao redor do título */
-    text-align: center;
-}
+/* Estilo do conteúdo principal */
 .conteudo-principal {
-    background-color:#BCF9FF; /* Cor diferente para o conteúdo principal */
-    padding: 300px; /* Espaçamento interno do conteúdo (ajuste de acordo com sua necessidade) */
+    background-color: #BCF9FF; /* Cor diferente para o conteúdo principal */
+    padding: 40px; /* Ajuste o padding conforme necessário (reduzi o padding para evitar que ultrapasse os limites) */
     margin-top: 20px; /* Espaço acima do conteúdo principal */
-    border-radius: 8px; /* Bordas arredondadas (opcional) */
-    width: 80%; /* Largura do conteúdo principal (ajuste conforme necessário) */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 90%; /* Ajustei a largura para 90% para dar um pouco mais de espaço nas laterais */
+    max-width: 1200px; /* Limite de largura máxima */
     margin-left: auto; /* Centraliza o conteúdo horizontalmente */
     margin-right: auto; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
-    height: 100%
+    height: calc(100vh - 120px); /* Ajusta a altura para ocupar toda a tela, considerando o header e padding */
+    overflow: auto; /* Se necessário, adiciona rolagem interna para o conteúdo */
 }

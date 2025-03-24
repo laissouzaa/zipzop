@@ -35,6 +35,7 @@ header {
     text-align: center; /* Centraliza o texto */
     border-radius: 10px;
     width: 100%; /* Garante que o header ocupe toda a largura da página */
+    overflow: hidden;
 }
 
 /* Estilo para o logo no header */

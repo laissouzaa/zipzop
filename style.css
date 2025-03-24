@@ -26,22 +26,22 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%; 
-    min-height: 80px; /* Altura mínima para o header */
+    min-height: 80px; 
     padding: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
+    box-sizing: border-box; 
 }
 
 /* Estilo para a logo dentro do header */
 header .logo {
-    width: 130px; /* Largura adequada para a logo */
-    max-width: 100%; /* Garante que a logo não ultrapasse o tamanho definido */
-    height: auto; /* Mantém a proporção */
-    margin-right: 10px; /* Ajusta a margem entre logo e título */
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
 }
 
 /* Estilo do título no header */
@@ -53,28 +53,29 @@ header .titulo {
 
 /* Estilo do conteúdo principal */
 .conteudo-principal {
-    background-color: #BCF9FF; 
-    padding: 20px; /* Reduz o padding */
+    background-color: #BCF9FF;
+    padding: 20px; 
     margin-top: 20px;
     border-radius: 8px;
     width: 100%;
     max-width: 1200px; 
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
 }
 
 /* Estilo para o contêiner das imagens */
 .image-container {
     background-color: aquamarine;
     display: flex;
-    flex-direction: row; /* Alinha as imagens na horizontal */
+    flex-direction: row; 
     justify-content: center;
-    gap: 20px; /* Ajuste do espaçamento entre as imagens */
+    gap: 20px;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -82,9 +83,9 @@ header .titulo {
 
 /* Estilo das imagens dentro do .image-container */
 .image-container img {
-    width: 100px; /* Largura ajustada das imagens */
-    height: 100px; /* Altura ajustada das imagens */
-    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
     border-radius: 8px;
 }
 
@@ -94,16 +95,16 @@ header .titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px; /* Aumentado o espaçamento */
+    gap: 30px;
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 40px; /* Aumentado o espaçamento inferior */
+    margin-bottom: 40px;
 }
 
 /* Estilo das imagens dentro da div sobremesas */
 .sobremesas img {
-    width: 100px; 
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -124,10 +125,10 @@ header .titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px; /* Aumentado o espaçamento entre as imagens da div bebidas */
+    gap: 40px; 
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 50px; /* Aumentado o espaçamento inferior */
+    margin-bottom: 50px;
 }
 
 /* Estilo das imagens dentro da div bebidas */
@@ -142,11 +143,11 @@ header .titulo {
 @media screen and (max-width: 768px) {
     /* Ajustes no header */
     header .logo {
-        width: 100px; /* Logo menor em telas pequenas */
+        width: 100px;
     }
     
     header .titulo {
-        font-size: 20px; /* Tamanho da fonte menor */
+        font-size: 20px;
     }
 
     /* Ajustes no conteúdo principal */
@@ -156,8 +157,8 @@ header .titulo {
 
     /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: column; /* Alinha as imagens em coluna em telas pequenas */
-        gap: 30px; /* Aumenta o espaçamento entre as divs */
+        flex-direction: row; /* Mantém a linha mesmo em telas menores */
+        gap: 30px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -165,13 +166,13 @@ header .titulo {
 
     /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
-        width: 80px; 
-        height: 80px; 
+        width: 80px;
+        height: 80px;
     }
 
     /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
-        font-size: 16px; 
+        font-size: 16px;
         padding: 8px;
     }
 }
@@ -183,7 +184,7 @@ header .titulo {
     }
 
     header .logo {
-        width: 80px; 
+        width: 80px;
     }
     
     header .titulo {
@@ -191,8 +192,8 @@ header .titulo {
     }
 
     .image-container, .sobremesas, .bebidas {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row; /* Ainda mantendo em linha */
+        gap: 20px;
         width: 90%;
     }
 

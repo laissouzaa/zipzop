@@ -27,6 +27,7 @@ header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
     margin-top: 0;
+    width: 80%;
     padding: 30px 20px; /* Reduzi o padding para diminuir o tamanho interno da header */
     height: 80px; /* Defini uma altura fixa para o header */
     display: flex; /* Ativa o modelo de layout flexbox */
@@ -34,7 +35,6 @@ header {
     align-items: center; /* Centraliza os itens verticalmente */
     text-align: center; /* Centraliza o texto */
     border-radius: 10px;
-    width: 80%; /* Garante que o header ocupe toda a largura da página */
 }
 
 /* Estilo para o logo no header */

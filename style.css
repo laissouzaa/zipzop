@@ -140,6 +140,7 @@ header .titulo {
 }
 
 /* Responsividade: Ajustes para telas menores como celulares */
+/* Responsividade para telas menores como celulares */
 @media screen and (max-width: 768px) {
     /* Ajustes no header */
     header .logo {
@@ -152,12 +153,13 @@ header .titulo {
 
     /* Ajustes no conteúdo principal */
     .conteudo-principal {
-        padding: 15px; 
+        padding: 15px;
     }
 
     /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: row; /* Mantém a linha mesmo em telas menores */
+        flex-direction: row; /* Mantém as imagens em linha */
+        justify-content: center; /* Alinha as imagens no centro */
         gap: 30px;
         width: 90%;
         margin-left: auto;
@@ -179,10 +181,15 @@ header .titulo {
 
 /* Responsividade para telas muito pequenas (como o modo retrato de dispositivos como o Redmi 11) */
 @media screen and (max-width: 480px) {
+    /* Ajuste o padding do conteúdo principal para 80% da tela */
     .conteudo-principal {
-        padding: 90%;
+        padding: 10px 15px;  /* Menos padding em cima e mais nas laterais */
+        width: 80%; /* Isso garante que a largura do conteúdo fique com 80% da tela */
+        margin-left: auto;
+        margin-right: auto; /* Centraliza */
     }
 
+    /* Ajuste no header */
     header .logo {
         width: 80px;
     }
@@ -191,22 +198,29 @@ header .titulo {
         font-size: 18px;
     }
 
+    /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
-        flex-direction: row; /* Ainda mantendo em linha */
+        flex-direction: row; /* Mantém as imagens em linha */
+        justify-content: center; /* Alinha as imagens no centro */
         gap: 20px;
-        width: 90%;
+        width: 90%; /* Ajusta a largura */
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
         width: 70px;
         height: 70px;
     }
 
+    /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
         font-size: 14px;
         padding: 6px;
     }
 }
+
 
 
 

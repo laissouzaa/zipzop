@@ -180,7 +180,7 @@ header .titulo {
 /* Responsividade para telas muito pequenas (como o modo retrato de dispositivos como o Redmi 11) */
 @media screen and (max-width: 480px) {
     .conteudo-principal {
-        padding: 10px;
+        padding: 90%;
     }
 
     header .logo {

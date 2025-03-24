@@ -44,5 +44,4 @@ header .titulo {
     margin-right: auto; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
     height: 100%
-    overflow: hidden;
 }

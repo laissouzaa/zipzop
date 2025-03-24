@@ -26,16 +26,17 @@ body {
 header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
-    background-position: center; 
-    width: 100%; 
-    padding: 20px 10px; 
-    min-height: 80px; 
+    background-position: center; /* Para garantir que a imagem de fundo fique centralizada */
+    width: 100%; /* Ocupa toda a largura da tela */
+    min-height: 80px; /* Altura mínima para a header */
+    padding: 15px 10px; /* Ajuste o padding para um tamanho mais adequado */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
+    overflow: hidden; /* Impede o conteúdo de ultrapassar os limites */
 }
 
 

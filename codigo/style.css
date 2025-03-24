@@ -24,13 +24,13 @@ body {
 header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
-    margin-top: 0; /* Removi o valor negativo */
+    margin-top: 0;
     padding: 30px 20px; /* Reduzi o padding para diminuir o tamanho interno da header */
     height: 80px; /* Defini uma altura fixa para o header */
     display: flex; /* Ativa o modelo de layout flexbox */
     justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: center; /* Centraliza os itens verticalmente */
-    text-align: center; /* Centraliza o texto (se houver) */
+    text-align: center; /* Centraliza o texto */
     border-radius: 10px;
     width: 100%; /* Garante que o header ocupe toda a largura da página */
 }
@@ -45,20 +45,29 @@ header .logo {
 header .titulo {
     font-size: 24px; /* Define o tamanho da fonte do título */
     color: white; /* Cor do texto do título */
-    margin: 0; /* Remove margens adicionais */
+    margin: 0;
 }
 
 /* Estilo do conteúdo principal */
 .conteudo-principal {
     background-color: #BCF9FF; /* Cor diferente para o conteúdo principal */
-    padding: 40px; /* Ajuste o padding conforme necessário (reduzi o padding para evitar que ultrapasse os limites) */
+    padding: 40px; /* Ajuste o padding conforme necessário */
     margin-top: 20px; /* Espaço acima do conteúdo principal */
     border-radius: 8px; /* Bordas arredondadas */
-    width: 90%; /* Ajustei a largura para 90% para dar um pouco mais de espaço nas laterais */
+    width: 100%; /* Garante que o conteúdo ocupe 100% da largura */
     max-width: 1200px; /* Limite de largura máxima */
     margin-left: auto; /* Centraliza o conteúdo horizontalmente */
     margin-right: auto; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
-    height: calc(100vh - 120px); /* Ajusta a altura para ocupar toda a tela, considerando o header e padding */
-    overflow: auto; /* Se necessário, adiciona rolagem interna para o conteúdo */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Impede barras de rolagem */
+}
+
+/* Faz com que o conteúdo dentro do .conteudo-principal não ultrapasse os limites da tela */
+.conteudo-principal > * {
+    flex-shrink: 0; /* Impede que os itens encolham e causem overflow */
 }

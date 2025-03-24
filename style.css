@@ -1,3 +1,4 @@
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
@@ -148,6 +149,7 @@ header .titulo {
     object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
     border-radius: 8px; /* Bordas arredondadas nas imagens */
 }
+
 .bebidastexto {
     background-color: rgb(44, 128, 167);
     border-radius: 10px;
@@ -157,6 +159,75 @@ header .titulo {
     text-align: center;
 }
 
+/* Responsividade: Ajustes para telas menores como celulares */
+@media screen and (max-width: 768px) {
+    /* Ajustes no header */
+    header .logo {
+        width: 100px; /* Logo menor em telas pequenas */
+    }
+    
+    header .titulo {
+        font-size: 18px; /* Tamanho da fonte menor */
+    }
 
+    /* Ajustes no conteúdo principal */
+    .conteudo-principal {
+        padding: 20px; /* Menos padding */
+        margin-top: 10px; /* Menos margem */
+    }
+
+    /* Ajustes no layout das imagens */
+    .image-container, .sobremesas, .bebidas {
+        flex-direction: column; /* Alinha as imagens em coluna em telas pequenas */
+        gap: 20px; /* Reduz o espaçamento entre as imagens */
+    }
+
+    /* Ajustes nas imagens */
+    .image-container img, .sobremesas img, .bebidas img {
+        width: 100px; /* Imagens menores */
+        height: 100px; /* Imagens menores */
+    }
+
+    /* Ajustes nos títulos */
+    .Salgados, .Sobremesas, .bebidastexto {
+        font-size: 18px; /* Tamanho de fonte menor */
+        padding: 8px; /* Menos padding */
+    }
+}
+
+/* Responsividade para telas muito pequenas (celulares em modo retrato) */
+@media screen and (max-width: 480px) {
+    /* Ajustes no conteúdo principal */
+    .conteudo-principal {
+        padding: 10px; /* Menos padding */
+    }
+
+    /* Ajustes no header */
+    header .logo {
+        width: 80px; /* Logo ainda menor */
+    }
+    
+    header .titulo {
+        font-size: 16px; /* Tamanho da fonte menor ainda */
+    }
+
+    /* Ajustes no layout das imagens */
+    .image-container, .sobremesas, .bebidas {
+        flex-direction: column; /* Alinha as imagens em coluna em telas muito pequenas */
+        gap: 15px; /* Menos espaçamento */
+    }
+
+    /* Ajustes nas imagens */
+    .image-container img, .sobremesas img, .bebidas img {
+        width: 80px; /* Imagens ainda menores */
+        height: 80px; /* Imagens ainda menores */
+    }
+
+    /* Ajustes nos títulos */
+    .Salgados, .Sobremesas, .bebidastexto {
+        font-size: 16px; /* Fonte ainda menor */
+        padding: 6px; /* Menos padding */
+    }
+}
 
 

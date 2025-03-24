@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que o body e html ocupem 100% da altura e largura */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Corpo da página com a imagem de fundo */
+body {
+    background-image: url('https://th.bing.com/th/id/R.8ae680ca1aa4896e8771ba08b710ec05?rik=e649awJ6uisw3A&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2ffV5FG8TpqGcso%2fgiphy.gif&ehk=PG65Au2QR%2bpggH%2b9qCEDP7l54%2f7oybsjuEkV2dv9Rnk%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Deixa a imagem fixa ao rolar a página */
+    background-position: center; /* Centraliza a imagem */
+    height: 100%; /* Garante que o body ocupe 100% da altura */
+}
+
+/* Ajuste para o header */
+header {
+    background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
+    background-size: cover;
+    background-position: center; /* Para garantir que a imagem de fundo fique centralizada */
+    width: 100%; /* Ocupa toda a largura da tela */
+    min-height: 80px; /* Altura mínima para o header */
+    padding: 10px 10px; /* Ajuste o padding para um tamanho mais adequado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
+}
+
+/* Estilo para o título no header */
+header .logo {
+    width: 130px; /* Define a largura da logo */
+    margin-right: 10px; /* Ajusta a margem entre logo e título */
+}
+
+/* Estilo do título no header */
+header .titulo {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    color: white; /* Cor do texto do título */
+    margin: 0;
+}
+
+/* Estilo do conteúdo principal */
+.conteudo-principal {
+    background-color: #BCF9FF; /* Cor diferente para o conteúdo principal */
+    padding: 40px; /* Ajuste o padding conforme necessário */
+    margin-top: 20px; /* Espaço acima do conteúdo principal */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 100%; /* Garante que o conteúdo ocupe 100% da largura */
+    max-width: 1200px; /* Limite de largura máxima */
+    margin-left: auto; /* Centraliza o conteúdo horizontalmente */
+    margin-right: auto; /* Centraliza o conteúdo horizontalmente */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Faz com que o conteúdo dentro do .conteudo-principal não ultrapasse os limites da tela */
+.conteudo-principal > * {
+    flex-shrink: 0; /* Impede que os itens encolham e causem overflow */
+}
+
+/* Estilo para o contêiner das imagens */
+.image-container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row; /* Alinha as imagens na horizontal */
+    justify-content: center; /* Alinha as imagens no centro */
+    gap: 30px; /* Aumenta o espaçamento entre as imagens */
+    padding: 20px;
+    border-radius: 12px; /* Bordas arredondadas para o contêiner */
+    margin-bottom: 30px; /* Espaçamento entre o container e a div sobremesas */
+}
+
+/* Estilo das imagens na div image-container */
+.image-container img {
+    width: 120px; /* Define a largura fixa para as imagens */
+    height: 120px; /* Define a altura fixa para as imagens */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilos para a div sobremesas */
+.sobremesas {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row; /* Alinha as imagens na horizontal */
+    justify-content: center; /* Alinha as imagens no centro */
+    gap: 30px; /* Aumenta o espaçamento entre as imagens */
+    padding: 20px;
+    border-radius: 12px; /* Bordas arredondadas para o contêiner */
+}
+
+/* Estilo das imagens na div sobremesas */
+.sobremesas img {
+    width: 120px; /* Define a largura fixa para as imagens */
+    height: 120px; /* Define a altura fixa para as imagens */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilo para o título da div Salgados */
+.Salgados {
+    background-color: rgb(44, 128, 167);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
+    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
+    color: white; /* Define a cor do texto (caso queira) */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+/* Estilo para o título da div Sobremesas */
+.Sobremesas {
+    background-color: rgb(44, 128, 167);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
+    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
+    color: white; /* Define a cor do texto (caso queira) */
+    text-align: center;
+}
+
+/* Estilos para a div bebidas */
+.bebidas {
+    background-color: rgb(195, 182, 255);
+    display: flex;
+    flex-direction: row; /* Alinha as imagens na horizontal */
+    justify-content: center; /* Alinha as imagens no centro */
+    gap: 30px; /* Aumenta o espaçamento entre as imagens (igual a .sobremesas) */
+    padding: 20px;
+    border-radius: 12px; /* Bordas arredondadas para o contêiner */
+    margin-bottom: 30px; /* Adiciona o mesmo espaçamento entre a div bebidas e a próxima */
+}
+
+/* Estilo das imagens na div bebidas */
+.bebidas img {
+    width: 120px; /* Define a largura fixa para as imagens */
+    height: 120px; /* Define a altura fixa para as imagens */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+.bebidastexto {
+    background-color: rgb(44, 128, 167);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
+    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
+    color: white; /* Define a cor do texto (caso queira) */
+    text-align: center;
+}
+
+
+
+@media (max-width: 380px) {
+    /* Para o header */
+    header {
+        height: 50px; /* Reduz a altura do header */
+        padding: 10px 5px; /* Ajusta o padding */
+    }
+
+    header .titulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    /* Para o conteúdo principal */
+    .conteudo-principal {
+        padding: 15px; /* Reduz o padding do conteúdo principal */
+        margin-top: 10px; /* Ajusta o espaço acima */
+        width: 100%; /* Garante que o conteúdo ocupe toda a largura da tela */
+        max-width: none; /* Remove o limite de largura máxima */
+    }
+}

@@ -22,22 +22,24 @@ body {
     overflow: hidden;
 }
 
-/* Estilo para o header */
+
 header {
     background-image: url('https://i.pinimg.com/originals/ba/1c/92/ba1c924dd3df8e4f2c76a0b031dc08fe.gif');
     background-size: cover;
-    margin-top: 0;
-    width: 70%;
-    padding: 20px 10px; /* Reduzi o padding para diminuir o tamanho interno da header */
-    height: 80px; /* Defini uma altura fixa para o header */
-    display: flex; /* Ativa o modelo de layout flexbox */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
-    text-align: center; /* Centraliza o texto */
+    background-position: center; 
+    width: 100%; 
+    padding: 20px 10px; 
+    min-height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 10px;
+    box-sizing: border-box; 
 }
 
-/* Estilo para o logo no header */
+
+
 header .logo {
     width: 130px; /* Define a largura da logo */
     margin-right: 10px; /* Ajusta a margem entre logo e título */

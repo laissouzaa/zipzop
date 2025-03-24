@@ -43,4 +43,5 @@ header .titulo {
     margin-left: auto; /* Centraliza o conteúdo horizontalmente */
     margin-right: auto; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    height: calc(100vh - 40px);
 }

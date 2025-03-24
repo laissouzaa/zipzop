@@ -19,6 +19,7 @@ body {
     background-attachment: fixed; /* Deixa a imagem fixa ao rolar a página */
     background-position: center; /* Centraliza a imagem */
     height: 100%; /* Garante que o body ocupe 100% da altura */
+    overflow: hidden;
 }
 
 /* Estilo para o header */

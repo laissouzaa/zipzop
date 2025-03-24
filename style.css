@@ -1,3 +1,4 @@
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
@@ -84,8 +85,8 @@ header .titulo {
 
 /* Estilo das imagens na div image-container */
 .image-container img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
+    max-width: 100%; /* Imagem vai se ajustar ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
     border-radius: 8px; /* Bordas arredondadas nas imagens */
 }
@@ -103,14 +104,14 @@ header .titulo {
 
 /* Estilo das imagens na div sobremesas */
 .sobremesas img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
+    max-width: 100%; /* Imagem vai se ajustar ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
     border-radius: 8px; /* Bordas arredondadas nas imagens */
 }
 
 /* Estilo para o título da div Salgados */
-.Salgados {
+.salgados {
     background-color: rgb(44, 128, 167);
     border-radius: 10px;
     margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
@@ -119,43 +120,6 @@ header .titulo {
     text-align: center; /* Centraliza o texto do título */
 }
 
-/* Estilo para o título da div Sobremesas */
-.Sobremesas {
-    background-color: rgb(44, 128, 167);
-    border-radius: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
-    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
-    color: white; /* Define a cor do texto (caso queira) */
-    text-align: center;
-}
-
-/* Estilos para a div bebidas */
-.bebidas {
-    background-color: rgb(195, 182, 255);
-    display: flex;
-    flex-direction: row; /* Alinha as imagens na horizontal */
-    justify-content: center; /* Alinha as imagens no centro */
-    gap: 30px; /* Aumenta o espaçamento entre as imagens (igual a .sobremesas) */
-    padding: 20px;
-    border-radius: 12px; /* Bordas arredondadas para o contêiner */
-    margin-bottom: 30px; /* Adiciona o mesmo espaçamento entre a div bebidas e a próxima */
-}
-
-/* Estilo das imagens na div bebidas */
-.bebidas img {
-    width: 120px; /* Define a largura fixa para as imagens */
-    height: 120px; /* Define a altura fixa para as imagens */
-    object-fit: cover; /* Garante que as imagens mantenham a proporção, sem distorcer */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
-}
-.bebidastexto {
-    background-color: rgb(44, 128, 167);
-    border-radius: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre o título e a div image-container */
-    padding: 10px; /* Se desejar também adicionar um padding dentro do título */
-    color: white; /* Define a cor do texto (caso queira) */
-    text-align: center;
-}
-
+/* Estilo para o título da*
 
 

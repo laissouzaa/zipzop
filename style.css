@@ -180,17 +180,20 @@ header .titulo {
     .image-container, .sobremesas, .bebidas {
         flex-direction: column; /* Alinha as imagens em coluna em telas pequenas */
         gap: 20px; /* Reduz o espaçamento entre as imagens */
+        width: 90%; /* Reduz a largura das divs */
+        margin-left: auto; /* Centraliza horizontalmente */
+        margin-right: auto; /* Centraliza horizontalmente */
     }
 
     /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
-        width: 100px; /* Imagens menores */
-        height: 100px; /* Imagens menores */
+        width: 80px; /* Imagens menores */
+        height: 80px; /* Imagens menores */
     }
 
     /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
-        font-size: 18px; /* Tamanho de fonte menor */
+        font-size: 16px; /* Tamanho de fonte menor */
         padding: 8px; /* Menos padding */
     }
 }
@@ -214,20 +217,22 @@ header .titulo {
     /* Ajustes no layout das imagens */
     .image-container, .sobremesas, .bebidas {
         flex-direction: column; /* Alinha as imagens em coluna em telas muito pequenas */
-        gap: 15px; /* Menos espaçamento */
+        gap: 10px; /* Menos espaçamento */
+        width: 90%; /* Ajusta a largura para 90% */
     }
 
     /* Ajustes nas imagens */
     .image-container img, .sobremesas img, .bebidas img {
-        width: 80px; /* Imagens ainda menores */
-        height: 80px; /* Imagens ainda menores */
+        width: 70px; /* Imagens ainda menores */
+        height: 70px; /* Imagens ainda menores */
     }
 
     /* Ajustes nos títulos */
     .Salgados, .Sobremesas, .bebidastexto {
-        font-size: 16px; /* Fonte ainda menor */
+        font-size: 14px; /* Fonte ainda menor */
         padding: 6px; /* Menos padding */
     }
 }
+
 
 

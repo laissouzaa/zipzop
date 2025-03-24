@@ -71,3 +71,19 @@ header .titulo {
 .conteudo-principal > * {
     flex-shrink: 0; /* Impede que os itens encolham e causem overflow */
 }
+@media (max-width: 480px) {
+    /* Para telas menores que 480px (como celulares) */
+    header {
+        height: 50px; /* Reduz a altura do header */
+        padding: 10px 5px; /* Ajusta o padding */
+    }
+
+    header .titulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .conteudo-principal {
+        padding: 15px; /* Reduz o padding do conteúdo principal */
+        margin-top: 10px; /* Ajusta o espaço acima */
+    }
+}

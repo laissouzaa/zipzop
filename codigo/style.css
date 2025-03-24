@@ -18,6 +18,7 @@ body {
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-attachment: fixed; /* Deixa a imagem fixa ao rolar a página */
     background-position: center; /* Centraliza a imagem */
+    height: 100%; /* Garante que o body ocupe 100% da altura */
 }
 
 /* Estilo para o header */
@@ -59,7 +60,7 @@ header .titulo {
     margin-left: auto; /* Centraliza o conteúdo horizontalmente */
     margin-right: auto; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
-    height: 100vh; /* Ocupa 100% da altura da tela */
+    height: 100%; /* Ajuste a altura para ocupar toda a área disponível */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

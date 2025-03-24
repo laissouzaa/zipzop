@@ -159,22 +159,4 @@ header .titulo {
 
 
 
-@media (max-width: 380px) {
-    /* Para o header */
-    header {
-        height: 50px; /* Reduz a altura do header */
-        padding: 10px 5px; /* Ajusta o padding */
-    }
 
-    header .titulo {
-        font-size: 16px; /* Ajusta o tamanho da fonte do título */
-    }
-
-    /* Para o conteúdo principal */
-    .conteudo-principal {
-        padding: 15px; /* Reduz o padding do conteúdo principal */
-        margin-top: 10px; /* Ajusta o espaço acima */
-        width: 100%; /* Garante que o conteúdo ocupe toda a largura da tela */
-        max-width: none; /* Remove o limite de largura máxima */
-    }
-}
